@@ -1,13 +1,16 @@
 These are results trying to perform the following commands in LucyJS project on different debian systems:
 
+```
   npm install
   npm test
+```
 
 # debian jessie
 
 [Dockerfile](https://github.com/cancerberoSgx/testing-native-node-package-docker-travis/blob/master/jessie/Dockerfile)
 npm install : *fails*
 
+```
   ERROR:
     SOLINK_MODULE(target) Release/obj.target/lucy.node
   /usr/bin/ld: /workspace/external/libs/linux/liblucy.a(IndexSearcher.o): unrecognized relocation (0x2a) in section `.text'
@@ -19,7 +22,7 @@ npm install : *fails*
   gyp ERR! build error
   gyp ERR! stack Error: `make` failed with exit code: 2
   ...
-
+```
 
 # debian stretch
 
@@ -27,6 +30,7 @@ npm install : *fails*
 npm install : OK
 npm test: *fails*
 
+```
   Test Suites: 1 passed, 1 of 4 total
   Tests:       1 passed, 1 total
   Snapshots:   0 total
@@ -58,7 +62,7 @@ npm test: *fails*
   29ea000000-29ea080000 rw-p 00000000 00:00 0
   a3ca600000-a3ca680000 rw-p 00000000 00:00 0
   ...
-
+```
 
 # Debian buster
 
@@ -68,6 +72,7 @@ npm test: *fails*
 
 Very similar to stretch:
 
+```
   Test Suites: 1 passed, 1 of 4 total
   Tests:       1 passed, 1 total
   Snapshots:   0 total
@@ -96,7 +101,7 @@ Very similar to stretch:
   0215b000-02176000 rw-p 01b5b000 00:35 1543                               /usr/bin/node
   02176000-0218d000 rw-p 00000000 00:00 0
   03c4b000-03e42000 rw-p 00000000 00:00 0                                  [heap]
-
+```
 
 # Debian sid
 
