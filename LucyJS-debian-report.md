@@ -1,10 +1,7 @@
-"
-I'm trying npm install in different linux versions and I found out that, because we are binding with a statuc libraries .a files, buildtools versions of the guest system must exactly much buildtools used to generate those .a files. For example, in debian jessie (LTS) it will simply fail, I'm trying with this docker file:
+These are results trying to perform the following commands in LucyJS project on different debian systems:
 
-"
-
-
-
+  npm install
+  npm test
 
 # debian jessie
 
